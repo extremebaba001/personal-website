@@ -1,23 +1,25 @@
 <html>
     <head>
     <link rel="stylesheet" href="titlesection/titlesection.css">
+<style>body {background-image: url('https://thumbs.dreamstime.com/b/idyllic-summer-landscape-clear-mountain-lake-alps-45054687.jpg');
+background-size: cover;
+ }
+</style>
 </head>
     <body>
-        <div style="text-align: center;">
+        <div class="main-section" id="title">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Iconic_image_of_Vincent_van_Gogh.jpg/800px-Iconic_image_of_Vincent_van_Gogh.jpg" alt="Vincent van Gogh" width="300">
                 <h1>Welcome to Vincent's web page</h1>
                 <p>This is where dreams come true!</p>
                  <button onclick="makeDreamComeTrue()">make dream come true</button>
         </div>
+ <script>
+    function makeDreamComeTrue() {
+    document.body.style.background = 'url("https://media.giphy.com/media/HhTXt43pk11W/200.gif")';
+    document.getElementById("title").style.visibility = "hidden";
+}
+</script>   
     </body>
 </html>
-<style>body {background-image: url('https://thumbs.dreamstime.com/b/idyllic-summer-landscape-clear-mountain-lake-alps-45054687.jpg');
-background-size: cover;
- }
-</style>
+
  
-<script>
-    function makeDreamComeTrue() {
-        alert("Your dream has come true!");
-    }
-</script>
