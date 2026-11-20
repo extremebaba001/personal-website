@@ -1,24 +1,17 @@
 :root {
-    --titleSectionPrimaryColor: white;
-}
-h1 {
-    color: blue;
-}
-
-button:hover {
-    background-color: red;
-    cursor: pointer;
-    font-size: 20px;
+    --titleSectionPrimaryColor: rgb(198, 231, 250);
+    --titleSectionSecondaryColor: rgb(224, 170, 160);
 }
 
 #title {
     color: var(--titleSectionPrimaryColor);
-    width: 100%;
     text-align: center;
     padding-top: 200px;
     background-image: url('../images/desert art.jpg');
     background-position: center top;
-    .title-section-button {
+}
+
+.title-section-button {
     color: var(--titleSectionPrimaryColor);
     border: solid var(--titleSectionPrimaryColor) 1px;
     border-radius: 5px;
@@ -27,11 +20,11 @@ button:hover {
 }
 
 .title-section-button:hover {
-    background-color: red;
+    background-color: var(--titleSectionPrimaryColor);
+    color: var(--titleSectionSecondaryColor);
     cursor: pointer;
 }
-    
-}
+
 
 .main-section {
     width: 100vw;
